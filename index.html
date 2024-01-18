@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fyle Internship Assingment-Akash Nipunge</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- font style import -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700;900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Tilt+Neon&display=swap");
+      .loaderParent{
+        width: 100vw;
+      }
+      .loader {
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #3498db;
+        width: 120px;
+        margin: auto;
+        height: 120px;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+      }
+      
+      /* Safari */
+      @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+
+
+    <!-- link for fontawesome -->
+    <script src="https://kit.fontawesome.com/f467ee6d35.js" crossorigin="anonymous"></script>
+
+
+  </head>
+  <body>
+    <main id="main-container">
+      <div class="searchBox">
+        <input type="text" placeholder="Enter Username" id="usernameText"/>
+        <button id="searchUser">Search</button>
+      </div>
+      <div class="userProfile" id="userProfile">
+      </div>
+      <div class="user-repos" id="user-repos"></div>
+      <div id="pagination-container"></div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
+
