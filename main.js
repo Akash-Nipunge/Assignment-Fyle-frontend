@@ -6,7 +6,7 @@ const mainContainer = document.getElementById('main-container');
 let username = 'johnpapa';
 const fetchData = async (page = 1, limit = 10) => {
     dataContainer.innerHTML = '<div class="loaderParent"><div class="loader"></div></div>'
-    const response = await fetch(`http://localhost:5000/user/?username=${username}&page=${page}&limit=${limit}`);
+    const response = await fetch(`https://assignment-fyle-backend-akashnipunge.vercel.app/user/?username=${username}&page=${page}&limit=${limit}`);
     const data = await response.json();
     // Display paginated data
     dataContainer.innerHTML = ' ';
