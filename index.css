@@ -136,33 +136,6 @@ main {
       }
     }
   }
-
-  @media screen and (max-width: 386px) {
-    .userProfile {
-        .left {
-          .profileImage {
-            width: 100px;
-            height: 100px;
-          }
-        }
-        .right{
-            h2{
-                font-size: 1.2rem;
-            }
-            div{
-                font-size: 0.8rem;
-            }
-        }
-      }
-    .user-repos {
-      grid-template-columns: auto;
-    }
-    .searchBox {
-      input {
-        width: 200px;
-      }
-    }
-  }
   #pagination-container {
     text-align: center;
     margin-top: 1rem;
